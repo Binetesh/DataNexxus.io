@@ -35,14 +35,7 @@
 </head>
 <body class="bg-brand-light text-brand-gray font-sans antialiased">
 
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-brand-dark text-white p-4 z-50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs shadow-2xl border-t border-brand-gold/30">
-        <p>We use essential cookies to optimize your platform experience and analyze traffic patterns in accordance with global market research data privacy standards. By continuing to navigate DataNexxus, you agree to our policies.</p>
-        <div class="flex gap-4 shrink-0">
-            <button onclick="document.getElementById('cookie-banner').remove()" class="bg-brand-gold text-white px-4 py-2 rounded font-semibold hover:bg-white hover:text-brand-dark transition duration-300">Accept All</button>
-            <button onclick="document.getElementById('cookie-banner').remove()" class="border border-white/40 px-4 py-2 rounded hover:bg-white hover:text-brand-dark transition duration-300">Preferences</button>
-        </div>
-    </div>
-
+    <!-- Floating Chat Widget -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
         <div id="chat-window" class="hidden mb-4 w-[320px] sm:w-[380px] bg-white rounded-xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col transition-all duration-200">
             <div class="bg-brand-dark p-4 text-white font-semibold flex justify-between items-center border-b border-brand-gold/30">
@@ -69,17 +62,14 @@
         </button>
     </div>
 
+    <!-- Top Info Bar -->
     <div class="bg-brand-dark text-white text-[11px] py-2 px-4 sm:px-8 flex justify-between items-center border-b border-brand-gold/20">
         <div class="flex items-center gap-6">
             <span><i class="fas fa-map-marker-alt text-brand-gold mr-2"></i>Operations Center: New Delhi, India</span>
         </div>
-        <div class="flex items-center gap-4">
-            <a href="https://www.linkedin.com/company/datanexxus/about/" target="_blank" class="hover:text-brand-gold transition duration-200"><i class="fab fa-linkedin mr-1"></i> LinkedIn</a>
-            <span class="text-white/20">|</span>
-            <a href="https://www.facebook.com/datanexxus" target="_blank" class="hover:text-brand-gold transition duration-200"><i class="fab fa-facebook mr-1"></i> Facebook</a>
-        </div>
     </div>
 
+    <!-- Header Navigation -->
     <header class="sticky top-0 bg-white/95 backdrop-blur shadow-sm z-40 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex justify-between items-center py-2">
             <a href="#home" class="flex items-center gap-4 group">
@@ -99,7 +89,6 @@
                 <a href="#industries" class="hover:text-brand-gold transition py-2">Industries</a>
                 <a href="#portfolio" class="hover:text-brand-gold transition py-2">Sample Outputs</a>
                 <a href="#resources" class="hover:text-brand-gold transition py-2">Resources</a>
-                <a href="#careers" class="hover:text-brand-gold transition py-2">Careers</a>
             </nav>
 
             <div class="hidden lg:flex items-center">
@@ -113,6 +102,7 @@
             </button>
         </div>
 
+        <!-- Mobile Navigation Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-2 shadow-xl">
             <a href="#home" onclick="toggleMobileMenu()" class="block text-brand-dark py-2 text-xs font-bold uppercase tracking-wider">Home</a>
             <a href="#about" onclick="toggleMobileMenu()" class="block text-brand-dark py-2 text-xs font-bold uppercase tracking-wider">About Us</a>
@@ -120,27 +110,26 @@
             <a href="#industries" onclick="toggleMobileMenu()" class="block text-brand-dark py-2 text-xs font-bold uppercase tracking-wider">Industries</a>
             <a href="#portfolio" onclick="toggleMobileMenu()" class="block text-brand-dark py-2 text-xs font-bold uppercase tracking-wider">Sample Outputs</a>
             <a href="#resources" onclick="toggleMobileMenu()" class="block text-brand-dark py-2 text-xs font-bold uppercase tracking-wider">Resources</a>
-            <a href="#careers" onclick="toggleMobileMenu()" class="block text-brand-dark py-2 text-xs font-bold uppercase tracking-wider">Careers</a>
             <a href="#contact" onclick="toggleMobileMenu()" class="block text-center bg-brand-dark text-white py-3 rounded text-xs font-bold uppercase tracking-widest mt-4">Contact Us</a>
         </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section id="home" class="relative bg-gradient-to-br from-brand-dark via-[#422D13] to-black text-white py-24 lg:py-32 overflow-hidden border-b-4 border-brand-gold">
             <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#DCA64A_1px,transparent_1px)] [background-size:24px_24px]"></div>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
-                
-                <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/40 px-4 py-1.5 rounded-full text-brand-gold text-[11px] font-bold uppercase tracking-widest">
+                <div class="lg:col-span-12 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-brand-gold/10 border border-brand-gold/40 px-4 py-1.5 rounded-full text-brand-gold text-[11px] font-bold uppercase tracking-widest mx-auto lg:mx-0">
                         <i class="fas fa-shield-halved text-xs"></i> Advanced Market Research Processing
                     </div>
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight max-w-4xl mx-auto lg:mx-0">
                         Transforming Raw Data into <span class="text-brand-gold">Actionable Insight</span>
                     </h1>
-                    <p class="text-gray-300 text-base max-w-2xl leading-relaxed">
+                    <p class="text-gray-300 text-base max-w-3xl leading-relaxed mx-auto lg:mx-0">
                         DataNexxus provides comprehensive data management, complex statistical analytics, meticulous quality assurance reviews, and presentation-ready business intelligence updates built for global enterprise teams.
                     </p>
-                    <div class="flex flex-wrap gap-4 pt-2">
+                    <div class="flex flex-wrap gap-4 pt-2 justify-center lg:justify-start">
                         <a href="#contact" class="bg-brand-gold text-white hover:bg-white hover:text-brand-dark px-6 py-3.5 rounded font-bold text-xs uppercase tracking-wider transition duration-300 shadow-lg">
                             Request Scope Assessment
                         </a>
@@ -149,29 +138,10 @@
                         </a>
                     </div>
                 </div>
-
-                <div class="lg:col-span-5 bg-white/5 border border-white/10 p-8 rounded-xl backdrop-blur-sm grid grid-cols-2 gap-6 relative">
-                    <div class="absolute -top-3 -right-3 w-16 h-16 bg-brand-gold/10 rounded-full blur-xl"></div>
-                    <div class="p-4 border-l-2 border-brand-gold bg-black/20 rounded-r">
-                        <div class="text-2xl font-bold text-white mb-0.5">Est. 2025</div>
-                        <div class="text-[10px] text-brand-gold uppercase font-bold tracking-wider">Founded Milestone</div>
-                    </div>
-                    <div class="p-4 border-l-2 border-brand-gold bg-black/20 rounded-r">
-                        <div class="text-2xl font-bold text-white mb-0.5">100%</div>
-                        <div class="text-[10px] text-brand-gold uppercase font-bold tracking-wider">QA Link Validation</div>
-                    </div>
-                    <div class="p-4 border-l-2 border-brand-gold bg-black/20 rounded-r">
-                        <div class="text-2xl font-bold text-white mb-0.5">End-to-End</div>
-                        <div class="text-[10px] text-brand-gold uppercase font-bold tracking-wider">Data Workflows</div>
-                    </div>
-                    <div class="p-4 border-l-2 border-brand-gold bg-black/20 rounded-r">
-                        <div class="text-2xl font-bold text-white mb-0.5">Premium</div>
-                        <div class="text-[10px] text-brand-gold uppercase font-bold tracking-wider">PPT Deliverables</div>
-                    </div>
-                </div>
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-start">
                 <div class="lg:col-span-5 space-y-6">
@@ -234,6 +204,7 @@
             </div>
         </section>
 
+        <!-- Services Section -->
         <section id="services" class="py-20 bg-gray-50 border-y border-gray-200">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -298,6 +269,7 @@
             </div>
         </section>
 
+        <!-- Industries Section -->
         <section id="industries" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row gap-12 items-center">
                 <div class="lg:w-1/3 space-y-4">
@@ -314,6 +286,7 @@
             </div>
         </section>
 
+        <!-- Portfolio Tabbed System -->
         <section id="portfolio" class="py-20 bg-brand-dark text-white border-y-4 border-brand-gold">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
                 <div class="text-center space-y-4 max-w-2xl mx-auto">
@@ -337,7 +310,7 @@
                             Clean, presentation-ready layout featuring complex tracking data cross-tabulated with multi-layered banner configurations. Clean typography and easy-to-read formatting built for global leadership teams.
                         </p>
                         <div class="bg-white/5 p-3 rounded font-mono text-[10px] text-gray-400 border border-white/5 max-w-md">
-                            Sample_Corporate_Insight_Deck_v2026.pptx [Valid Structure Check Pass]
+                            DataNexxus_Sample_Reporting_Deck.pptx [Valid Structure Check Pass]
                         </div>
                     </div>
                     <div id="tab-pane-2" class="hidden space-y-4">
@@ -364,14 +337,15 @@
                     </div>
 
                     <div class="pt-6 flex justify-center">
-                        <a href="#" class="bg-brand-gold hover:bg-white text-white hover:text-brand-dark px-8 py-3.5 rounded font-bold text-xs uppercase tracking-widest transition duration-300 shadow-md flex items-center gap-2">
-                            <i class="fas fa-download"></i> View Sample Outputs
-                        </a>
+                        <button onclick="handleSampleDownload()" class="bg-brand-gold hover:bg-white text-white hover:text-brand-dark px-8 py-3.5 rounded font-bold text-xs uppercase tracking-widest transition duration-300 shadow-md flex items-center gap-2">
+                            <i class="fas fa-download"></i> Download Sample Document
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Resources Block -->
         <section id="resources" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12">
                 <div class="lg:col-span-4 space-y-4">
@@ -381,90 +355,127 @@
                 </div>
                 <div class="lg:col-span-8 space-y-4 text-xs">
                     <div class="bg-white p-5 rounded border border-gray-200 shadow-sm">
-                        <h5 class="font-bold text-brand-dark uppercase tracking-wide mb-2">Which data systems and survey formats do you support?</h5>
-                        <p class="text-brand-gray leading-relaxed">We provide native structural workflows for standard survey management tools, including Decipher, Qualtrics, Confirmit, and customized CSV/Excel database architectures. Every tracking banner configuration is logic-checked back to raw data vectors.</p>
-                    </div>
-                    <div class="bg-white p-5 rounded border border-gray-200 shadow-sm">
-                        <h5 class="font-bold text-brand-dark uppercase tracking-wide mb-2">How is data security handled within outsourcing pipelines?</h5>
-                        <p class="text-brand-gray leading-relaxed">All corporate raw files run through multi-layer verification grids. Project files stay encrypted at rest and in transit, complying with global research privacy framework structures to keep proprietary demography insights secure.</p>
+                        <h5 class="font-bold text-brand-dark uppercase tracking-wide mb-2">Data Processing & Quality Control Setup</h5>
+                        <p class="text-brand-gray leading-relaxed">Implementation guide detailing cross-tab validation scripts, variable structural constraints, and clean presentation building blocks for automated processing.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="py-20 bg-gray-50 border-t border-gray-200">
-            <div class="max-w-3xl mx-auto px-4 text-center space-y-6">
-                <span class="text-xs font-bold uppercase tracking-widest text-brand-gold block">Get In Touch</span>
-                <h2 class="text-3xl font-bold text-brand-dark tracking-tight">Connect with an Engagement Coordinator</h2>
-                <p class="text-brand-gray text-sm max-w-xl mx-auto">Ready to accelerate your reporting delivery timelines? Submit your query to set up a scoping assessment call.</p>
-                
-                <form action="https://formspree.io/f/xlgvvrev" method="POST" class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm text-left space-y-4">
+        <!-- Formspree Contact Section -->
+        <section id="contact" class="py-20 bg-white border-t border-gray-100">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+                <div class="text-center space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-gold block">Engagement Desk</span>
+                    <h2 class="text-3xl font-bold text-brand-dark tracking-tight">Initiate Project Brief</h2>
+                    <p class="text-brand-gray text-sm">Submit your structured dataset rules, banner criteria, or custom reporting specifications directly to our consulting team.</p>
+                </div>
+
+                <form action="https://formspree.io/f/xlgvvrev" method="POST" class="space-y-4 text-xs">
                     <div class="grid sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-[11px] font-bold uppercase tracking-wider text-brand-dark mb-1">Your Name</label>
-                            <input type="text" name="name" required class="w-full p-2.5 text-xs bg-gray-50 border rounded-lg focus:outline-none focus:border-brand-gold">
+                            <label class="block font-bold text-brand-dark uppercase tracking-wider mb-2">Corporate Name</label>
+                            <input type="text" name="name" required class="w-full p-3 border border-gray-200 rounded focus:outline-none focus:border-brand-gold bg-brand-light">
                         </div>
                         <div>
-                            <label class="block text-[11px] font-bold uppercase tracking-wider text-brand-dark mb-1">Corporate Email</label>
-                            <input type="email" name="email" required class="w-full p-2.5 text-xs bg-gray-50 border rounded-lg focus:outline-none focus:border-brand-gold">
+                            <label class="block font-bold text-brand-dark uppercase tracking-wider mb-2">Business Email</label>
+                            <input type="email" name="email" required class="w-full p-3 border border-gray-200 rounded focus:outline-none focus:border-brand-gold bg-brand-light">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-[11px] font-bold uppercase tracking-wider text-brand-dark mb-1">Project Framework Requirements</label>
-                        <textarea name="message" rows="4" required placeholder="Outline timelines, banner data sizes, or PPT layout specs..." class="w-full p-2.5 text-xs bg-gray-50 border rounded-lg focus:outline-none focus:border-brand-gold"></textarea>
+                        <label class="block font-bold text-brand-dark uppercase tracking-wider mb-2">Project Classification</label>
+                        <select name="classification" class="w-full p-3 border border-gray-200 rounded focus:outline-none focus:border-brand-gold bg-brand-light font-medium text-brand-gray">
+                            <option>Data Cleaning & Validation Processing</option>
+                            <option>Cross-Tabulation & Banner Structuring</option>
+                            <option>Advanced Analytics Modeling Matrix</option>
+                            <option>Presentation-Ready PPT Dashboard Setup</option>
+                        </select>
                     </div>
-                    <button type="submit" class="w-full bg-brand-dark hover:bg-brand-gold text-white font-bold text-xs uppercase tracking-widest py-3 rounded-lg transition duration-300">
-                        Initialize Project Briefing
-                    </button>
+                    <div>
+                        <label class="block font-bold text-brand-dark uppercase tracking-wider mb-2">Scope Objectives & Technical Requirements</label>
+                        <textarea name="message" rows="5" required class="w-full p-3 border border-gray-200 rounded focus:outline-none focus:border-brand-gold bg-brand-light"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-brand-dark hover:bg-brand-gold text-white px-8 py-4 rounded font-bold text-xs uppercase tracking-widest transition duration-300 shadow-md">
+                            Transmit Specifications Securely
+                        </button>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer class="bg-brand-dark text-white text-xs py-8 border-t border-brand-gold/30">
+    <!-- Footer Area -->
+    <footer class="bg-brand-dark text-white/60 text-xs py-8 border-t border-brand-gold/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p class="text-gray-400">&copy; 2026 DataNexxus. All rights reserved globally.</p>
-            <div class="flex gap-4 text-gray-400">
-                <a href="#about" class="hover:text-brand-gold transition">Framework Integrity</a>
-                <span>&bull;</span>
-                <a href="#services" class="hover:text-brand-gold transition">Operational Standards</a>
+            <div>
+                <p>&copy; 2026 DataNexxus Solutions. All rights reserved.</p>
+            </div>
+            <div class="flex items-center gap-4 text-[11px] font-bold uppercase tracking-wider">
+                <a href="https://www.linkedin.com/company/datanexxus/about/" target="_blank" class="text-white hover:text-brand-gold transition duration-200"><i class="fab fa-linkedin mr-1"></i> LinkedIn</a>
+                <span class="text-white/20">|</span>
+                <a href="https://www.facebook.com/datanexxus" target="_blank" class="text-white hover:text-brand-gold transition duration-200"><i class="fab fa-facebook mr-1"></i> Facebook</a>
             </div>
         </div>
     </footer>
 
+    <!-- Operational Core JavaScript Scripts -->
     <script>
+        let currentTab = 1;
+        function switchTab(tabIndex) {
+            document.getElementById(`tab-pane-${currentTab}`).classList.add('hidden');
+            document.getElementById(`tab-btn-${currentTab}`).classList.remove('text-brand-gold', 'border-b-2', 'border-brand-gold');
+            document.getElementById(`tab-btn-${currentTab}`).classList.add('text-gray-400');
+            
+            currentTab = tabIndex;
+            
+            document.getElementById(`tab-pane-${currentTab}`).classList.remove('hidden');
+            document.getElementById(`tab-btn-${currentTab}`).classList.remove('text-gray-400');
+            document.getElementById(`tab-btn-${currentTab}`).classList.add('text-brand-gold', 'border-b-2', 'border-brand-gold');
+        }
+
         function toggleChat() {
-            const win = document.getElementById('chat-window');
-            win.classList.toggle('hidden');
+            const chat = document.getElementById('chat-window');
+            chat.classList.toggle('hidden');
         }
 
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             const icon = document.getElementById('menu-icon');
             menu.classList.toggle('hidden');
-            if (menu.classList.contains('hidden')) {
+            if(menu.classList.contains('hidden')) {
                 icon.className = "fas fa-bars text-xl";
             } else {
-                icon.className = "fas fa-xmark text-xl";
+                icon.className = "fas fa-times text-xl";
             }
         }
 
-        function switchTab(tabIndex) {
-            // Unset all buttons
-            for(let i=1; i<=3; i++) {
-                const btn = document.getElementById(`tab-btn-${i}`);
-                const pane = document.getElementById(`tab-pane-${i}`);
-                
-                btn.className = "pb-2 text-gray-400 hover:text-white transition";
-                pane.classList.add('hidden');
+        /* Updated & Verified Relative File Paths */
+        function handleSampleDownload() {
+            let fileName = "";
+            let fileUrl = "";
+
+            if (currentTab === 1) {
+                fileName = "DataNexxus_Sample_Reporting_Deck.pptx";
+                fileUrl = "downloads/DataNexxus_Sample_Reporting_Deck.pptx";
+            } else if (currentTab === 2) {
+                fileName = "Dynamic_Consumer_Tracker_Dashboard.html";
+                fileUrl = "#"; 
+            } else if (currentTab === 3) {
+                fileName = "Global_FMCG_Trend_Map_Print.pdf";
+                fileUrl = "#"; 
             }
-            
-            // Highlight current button selection
-            const activeBtn = document.getElementById(`tab-btn-${tabIndex}`);
-            const activePane = document.getElementById(`tab-pane-${tabIndex}`);
-            
-            activeBtn.className = "pb-2 text-brand-gold border-b-2 border-brand-gold";
-            activePane.classList.remove('hidden');
+
+            if (fileUrl !== "#") {
+                const link = document.createElement('a');
+                link.href = fileUrl;
+                link.download = fileName;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } else {
+                alert("This sample asset is currently under quality check and will be downloadable soon!");
+            }
         }
     </script>
 </body>
